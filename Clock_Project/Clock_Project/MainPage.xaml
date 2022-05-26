@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clock_Project.MainPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <AbsoluteLayout>
+                
+                
+                <Image
+                x:Name ="sky"
+                Opacity="1"
+                Source="sky.jpg"
+                AbsoluteLayout.LayoutBounds="0, 0, 1920, 1080"/>
+                <Image
+                x:Name ="dawn"
+                Opacity="1"
+                Source="dawn.png"
+                AbsoluteLayout.LayoutBounds="0, 0, 1920, 1080"/>                
+                <Image
+                x:Name ="moon"
+                Opacity="1"
+                Source="moon.png"
+                AbsoluteLayout.LayoutBounds="0, 0, 1920, 1080"/>               
+                <Image
+                x:Name ="underwater"
+                Opacity="1"
+                Source="underwater.png"
+                AbsoluteLayout.LayoutBounds="0, 0, 1920, 1080"/>
+                <Image
+                x:Name ="orora"
+                Opacity="1"
+                Source="orora.png"
+                AbsoluteLayout.LayoutBounds="0, 0, 1920, 1080"/>
+
+                
+
+                <Image
+                x:Name ="clock"
+                Opacity="1"
+                Source="clock.png"
+                AbsoluteLayout.LayoutBounds="742, 245, 440, 440"/>
+
+                <BoxView
+                x:Name = "hniddle"
+                BackgroundColor ="White"
+                AbsoluteLayout.LayoutBounds="960, 380, 10, 88"
+                AnchorY="1"/>
+                <BoxView
+                x:Name = "mniddle"
+                BackgroundColor ="White"
+                AbsoluteLayout.LayoutBounds="960, 340, 7, 128"
+                AnchorY="1"/>
+                <BoxView
+                x:Name = "sniddle"
+                BackgroundColor ="White"
+                AbsoluteLayout.LayoutBounds="962, 328, 3, 140"
+                AnchorY="1"/>
+
+                <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="810, 700, 400, 100">
+                    <Label
+                    x:Name="DigitalHour"                
+                    TextColor="White"
+                    FontSize="70"
+                    FontAttributes="None"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"/>
+                    <Label
+                    Text=":"                
+                    TextColor="White"
+                    FontSize="70"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"/>
+                    <Label
+                    x:Name="DigitalMinute"                
+                    TextColor="White"
+                    FontSize="70"
+                    FontAttributes="None"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"/>
+                    <Label
+                    Text=":"                
+                    TextColor="White"
+                    FontSize="70"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"/>
+                    <Label
+                    x:Name="DigitalSecond"                
+                    TextColor="White"
+                    FontSize="70"
+                    FontAttributes="None"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="720, 880, 480, 100">
+
+                    <Image
+                    x:Name ="nowWeather"
+                    Opacity="1"                    
+                    />
+                    <Label
+                    Text=" "
+                    FontSize="80"
+                    HorizontalOptions="CenterAndExpand"/>
+                    <Label
+                    x:Name="Weatherspoon"                
+                    TextColor="White"
+                    Text="날씨"
+                    FontSize="80"
+                    FontAttributes="Italic"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"/>
+                    <Label
+                    Text=" "
+                    FontSize="80"
+                    HorizontalOptions="CenterAndExpand"/>
+                    <Label
+                    x:Name="Weatherspoong"
+                    TextColor="White"
+                    Text="기온"
+                    FontSize="80"
+                    FontAttributes="Italic"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"/>                    
+                </StackLayout>
+                
+                <StackLayout  AbsoluteLayout.LayoutBounds="460, 1000, 1000, 100">
+                    <Label
+                    x:Name="headLine"
+                    TextColor="White"
+                    Text="헤드라인"
+                    FontSize="30"
+                    FontAttributes="None"                
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="End"
+                    VerticalOptions="Center"/>
+                </StackLayout>                
+
+            </AbsoluteLayout>
+
+
+            
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
